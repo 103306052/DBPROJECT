@@ -45,11 +45,14 @@ public class Order_Drink extends javax.swing.JFrame {
         jLabel11 = new javax.swing.JLabel();
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
+<<<<<<< HEAD
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
         CAKE_NAME = new javax.swing.JTextField();
         CAKE_PRICE = new javax.swing.JTextField();
+=======
+>>>>>>> origin/master
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -84,6 +87,7 @@ public class Order_Drink extends javax.swing.JFrame {
         jLabel13.setFont(new java.awt.Font("Sitka Banner", 1, 20)); // NOI18N
         jLabel13.setText("Sugar");
 
+<<<<<<< HEAD
         jLabel1.setText("Cake");
 
         jLabel2.setText("Name");
@@ -96,11 +100,14 @@ public class Order_Drink extends javax.swing.JFrame {
             }
         });
 
+=======
+>>>>>>> origin/master
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
                 .addGap(28, 28, 28)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
@@ -142,11 +149,44 @@ public class Order_Drink extends javax.swing.JFrame {
                             .addComponent(CAKE_NAME, javax.swing.GroupLayout.Alignment.LEADING)
                             .addComponent(CAKE_PRICE, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.PREFERRED_SIZE, 97, javax.swing.GroupLayout.PREFERRED_SIZE))))
                 .addContainerGap(55, Short.MAX_VALUE))
+=======
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(102, 102, 102)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(10, 10, 10)
+                                .addComponent(jLabel12))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                        .addComponent(jLabel11)
+                                        .addComponent(jLabel10)
+                                        .addComponent(jLabel9))
+                                    .addGroup(layout.createSequentialGroup()
+                                        .addComponent(jLabel13)
+                                        .addGap(6, 6, 6)))
+                                .addGap(81, 81, 81)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(DRINK_SUGAR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(DRINK_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(DRINK_ICE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(DRINK_NAME, javax.swing.GroupLayout.PREFERRED_SIZE, 112, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(DRINK_PRICE, javax.swing.GroupLayout.PREFERRED_SIZE, 56, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(155, 155, 155)
+                        .addComponent(jButton1))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(183, 183, 183)
+                        .addComponent(jLabel8)))
+                .addGap(81, 124, Short.MAX_VALUE))
+>>>>>>> origin/master
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
+<<<<<<< HEAD
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
                         .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -182,6 +222,30 @@ public class Order_Drink extends javax.swing.JFrame {
                             .addComponent(jLabel3)
                             .addComponent(CAKE_PRICE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                         .addGap(172, 172, 172)))
+=======
+                .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DRINK_NAME, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel11, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(18, 18, 18)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addComponent(jLabel9, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(DRINK_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DRINK_PRICE, javax.swing.GroupLayout.PREFERRED_SIZE, 21, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel10, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(3, 3, 3)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DRINK_SUGAR, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel13, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(DRINK_ICE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel12, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+>>>>>>> origin/master
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 33, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
@@ -194,9 +258,12 @@ public class Order_Drink extends javax.swing.JFrame {
             String url = "jdbc:mysql://localhost:3306/dbproject2";
             Connection con =  DriverManager.getConnection(url, "root", "");
             Statement stat = con.createStatement();
+<<<<<<< HEAD
             String Query_C = "INSERT INTO cake (Name, Price) VALUES ( '"+CAKE_NAME.getText()+" ' , '"+CAKE_PRICE.getText()+ "' ) ";        
             String Analysis_C = "UPDATE analysis SET Ca_Name = '"+CAKE_NAME.getText()+"' WHERE Ca_Name IS NULL";
             String Analysis_C2 = "UPDATE analysis SET Ca_Price = '"+CAKE_PRICE.getText()+"' WHERE Ca_Price IS NULL";
+=======
+>>>>>>> origin/master
             String Query = "INSERT INTO drink (Name, Size , Sugar , Ice , Price) VALUES ( '"+DRINK_NAME.getText()+" ' , '"+DRINK_SIZE.getSelectedItem()+" ' , '"+DRINK_SUGAR.getSelectedItem()+"', '"+DRINK_ICE.getSelectedItem()+"'  , '"+DRINK_PRICE.getText()+ "' ) ";        
             String Analysis = "UPDATE analysis SET D_Name = '"+DRINK_NAME.getText()+"' WHERE D_Name IS NULL";
             String Analysis2 =" UPDATE analysis SET D_Price = '"+DRINK_PRICE.getText()+"' WHERE D_Price IS NULL ";
@@ -206,17 +273,23 @@ public class Order_Drink extends javax.swing.JFrame {
             
                     
             stat.execute(Query);
+<<<<<<< HEAD
             stat.execute(Query_C);
             stat.execute(Analysis_C);
             stat.execute(Analysis_C2);
+=======
+>>>>>>> origin/master
             stat.execute(Analysis);
             stat.execute(Analysis2);
             stat.execute(Analysis3);
             stat.execute(Analysis4);
             stat.execute(Analysis5);
             
+<<<<<<< HEAD
             CAKE_NAME.setText(null);
             CAKE_PRICE.setText(null);
+=======
+>>>>>>> origin/master
             DRINK_NAME.setText(null);
             DRINK_SIZE.setSelectedItem("00");
             DRINK_SUGAR.setSelectedItem("00");
@@ -229,6 +302,7 @@ public class Order_Drink extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,e.toString());
         }
        this.dispose();
+<<<<<<< HEAD
        MainMenu oc = new MainMenu();
        oc.show();
     }//GEN-LAST:event_jButton1ActionPerformed
@@ -237,6 +311,12 @@ public class Order_Drink extends javax.swing.JFrame {
         // TODO add your handling code here:
     }//GEN-LAST:event_CAKE_PRICEActionPerformed
 
+=======
+       Order_Cake oc = new Order_Cake();
+       oc.show();
+    }//GEN-LAST:event_jButton1ActionPerformed
+
+>>>>>>> origin/master
     /**
      * @param args the command line arguments
      */
@@ -273,21 +353,30 @@ public class Order_Drink extends javax.swing.JFrame {
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
+<<<<<<< HEAD
     private javax.swing.JTextField CAKE_NAME;
     private javax.swing.JTextField CAKE_PRICE;
+=======
+>>>>>>> origin/master
     private javax.swing.JComboBox<String> DRINK_ICE;
     private javax.swing.JTextField DRINK_NAME;
     private javax.swing.JTextField DRINK_PRICE;
     private javax.swing.JComboBox<String> DRINK_SIZE;
     private javax.swing.JComboBox<String> DRINK_SUGAR;
     private javax.swing.JButton jButton1;
+<<<<<<< HEAD
     private javax.swing.JLabel jLabel1;
+=======
+>>>>>>> origin/master
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel11;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
+<<<<<<< HEAD
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
+=======
+>>>>>>> origin/master
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     // End of variables declaration//GEN-END:variables

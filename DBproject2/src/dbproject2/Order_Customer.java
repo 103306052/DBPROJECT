@@ -34,12 +34,17 @@ public class Order_Customer extends javax.swing.JFrame {
         Customer_NUMBER = new javax.swing.JTextField();
         GENDER = new javax.swing.JComboBox<>();
         AGE_RANGE = new javax.swing.JComboBox<>();
+<<<<<<< HEAD
+=======
+        COUNTRY = new javax.swing.JTextField();
+>>>>>>> origin/master
         GO_TO_DRINK = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel7 = new javax.swing.JLabel();
         jLabel8 = new javax.swing.JLabel();
+<<<<<<< HEAD
         COUNTRY = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -49,6 +54,11 @@ public class Order_Customer extends javax.swing.JFrame {
                 Customer_NUMBERMouseClicked(evt);
             }
         });
+=======
+
+        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+
+>>>>>>> origin/master
         Customer_NUMBER.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Customer_NUMBERActionPerformed(evt);
@@ -81,8 +91,11 @@ public class Order_Customer extends javax.swing.JFrame {
         jLabel8.setFont(new java.awt.Font("Sitka Banner", 1, 20)); // NOI18N
         jLabel8.setText("Country");
 
+<<<<<<< HEAD
         COUNTRY.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Taiwan", "Foreign" }));
 
+=======
+>>>>>>> origin/master
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
@@ -91,6 +104,7 @@ public class Order_Customer extends javax.swing.JFrame {
                 .addGap(111, 111, 111)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
+<<<<<<< HEAD
                         .addComponent(jLabel3)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                             .addGroup(layout.createSequentialGroup()
@@ -116,6 +130,32 @@ public class Order_Customer extends javax.swing.JFrame {
                                 .addGap(49, 49, 49)
                                 .addComponent(GO_TO_DRINK, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
                         .addContainerGap(180, Short.MAX_VALUE))))
+=======
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(jLabel8)
+                            .addComponent(jLabel6)
+                            .addComponent(jLabel7))
+                        .addGap(91, 91, 91)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addComponent(AGE_RANGE, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(COUNTRY, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
+                        .addComponent(GENDER, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGroup(layout.createSequentialGroup()
+                            .addComponent(jLabel3)
+                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                .addGroup(layout.createSequentialGroup()
+                                    .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                    .addComponent(jLabel5))
+                                .addGroup(layout.createSequentialGroup()
+                                    .addGap(91, 91, 91)
+                                    .addComponent(Customer_NUMBER, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)))))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(49, 49, 49)
+                        .addComponent(GO_TO_DRINK, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(50, 50, 50)))
+                .addContainerGap(117, Short.MAX_VALUE))
+>>>>>>> origin/master
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
@@ -162,8 +202,13 @@ public class Order_Customer extends javax.swing.JFrame {
             String url = "jdbc:mysql://localhost:3306/dbproject2";
             Connection con =  DriverManager.getConnection(url, "root", "");
             Statement stat = con.createStatement();
+<<<<<<< HEAD
             String Query = "INSERT INTO customer (Numbers , Genders , Age_range , Country) VALUES ( '"+Customer_NUMBER.getText()+" ' , '"+GENDER.getSelectedItem()+" ' , '"+AGE_RANGE.getSelectedItem()+"' , '"+COUNTRY.getSelectedItem()+ "' )";
             String Analysis = "INSERT INTO analysis (Id , Cu_Gender , Cu_Age , Cu_Country )VALUES ('"+Customer_NUMBER.getText()+" ' , '"+GENDER.getSelectedItem()+" ' , '"+AGE_RANGE.getSelectedItem()+"' , '"+COUNTRY.getSelectedItem()+ "' )";
+=======
+            String Query = "INSERT INTO customer (Numbers , Genders , Age_range , Country) VALUES ( '"+Customer_NUMBER.getText()+" ' , '"+GENDER.getSelectedItem()+" ' , '"+AGE_RANGE.getSelectedItem()+"' , '"+COUNTRY.getText()+ "' )";
+            String Analysis = "INSERT INTO analysis (Id , Cu_Gender , Cu_Age , Cu_Country )VALUES ('"+Customer_NUMBER.getText()+" ' , '"+GENDER.getSelectedItem()+" ' , '"+AGE_RANGE.getSelectedItem()+"' , '"+COUNTRY.getText()+ "' )";
+>>>>>>> origin/master
             stat.execute(Query);
             stat.execute(Analysis);
             
@@ -171,7 +216,11 @@ public class Order_Customer extends javax.swing.JFrame {
             Customer_NUMBER.setText(null);
             GENDER.setSelectedItem("00");
             AGE_RANGE.setSelectedItem("00");
+<<<<<<< HEAD
             COUNTRY.setSelectedItem(null);
+=======
+            COUNTRY.setText(null);
+>>>>>>> origin/master
         }
         catch(SQLException e){
             JOptionPane.showMessageDialog(null,e.toString());
@@ -181,6 +230,7 @@ public class Order_Customer extends javax.swing.JFrame {
        od.show();
     }//GEN-LAST:event_GO_TO_DRINKActionPerformed
 
+<<<<<<< HEAD
     private void Customer_NUMBERMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Customer_NUMBERMouseClicked
          try{
         String url = "jdbc:mysql://localhost:3306/dbproject2";
@@ -203,6 +253,8 @@ public class Order_Customer extends javax.swing.JFrame {
          }
     }//GEN-LAST:event_Customer_NUMBERMouseClicked
 
+=======
+>>>>>>> origin/master
     /**
      * @param args the command line arguments
      */
@@ -240,7 +292,11 @@ public class Order_Customer extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> AGE_RANGE;
+<<<<<<< HEAD
     private javax.swing.JComboBox<String> COUNTRY;
+=======
+    private javax.swing.JTextField COUNTRY;
+>>>>>>> origin/master
     private javax.swing.JTextField Customer_NUMBER;
     private javax.swing.JComboBox<String> GENDER;
     private javax.swing.JButton GO_TO_DRINK;

@@ -12,7 +12,10 @@ import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> origin/master
 /**
  *
  * @author jerry
