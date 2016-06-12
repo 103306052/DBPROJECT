@@ -8,7 +8,9 @@ package dbproject2;
 import com.mysql.jdbc.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
+import javax.swing.JFrame;
 import javax.swing.JOptionPane;
+
 
 /**
  *
@@ -16,6 +18,9 @@ import javax.swing.JOptionPane;
  */
 public class Login extends javax.swing.JDialog {
     Connection conn = new DBConnection().connect();
+    
+    
+    
 
     /**
      * Creates new form Login
@@ -119,6 +124,7 @@ public class Login extends javax.swing.JDialog {
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         String sql = "select * from user where username=? and password=?";
+        
         try{
             PreparedStatement ps = conn.prepareStatement(sql);
             ps.setString(1, jTextField1.getText());
@@ -172,7 +178,10 @@ public class Login extends javax.swing.JDialog {
         //</editor-fold>
 
         /* Create and display the form */
+        Background s = new Background();
+        s.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         java.awt.EventQueue.invokeLater(() -> {
+            
             Login dialog = new Login(new javax.swing.JFrame(), true);
             dialog.addWindowListener(new java.awt.event.WindowAdapter(){
             
@@ -180,6 +189,7 @@ public class Login extends javax.swing.JDialog {
                 public void windowClosing(java.awt.event.WindowEvent e){
                     System.exit(0);
                 }
+                
             });
              dialog.setVisible(true);
                     
