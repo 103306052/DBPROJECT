@@ -96,7 +96,7 @@ public class Order_Cake extends javax.swing.JFrame {
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel3)
                     .addComponent(CAKE_PRICE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 49, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 91, Short.MAX_VALUE)
                 .addComponent(jButton1, javax.swing.GroupLayout.PREFERRED_SIZE, 63, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(42, 42, 42))
         );
@@ -114,10 +114,14 @@ public class Order_Cake extends javax.swing.JFrame {
             Connection con =  DriverManager.getConnection(url, "root", "");
             Statement stat = con.createStatement();
             String Query = "INSERT INTO cake (Name, Price) VALUES ( '"+CAKE_NAME.getText()+" ' , '"+CAKE_PRICE.getText()+ "' ) ";        
-            
+            String Analysis = "UPDATE analysis SET Ca_Name = '"+CAKE_NAME.getText()+"' WHERE Ca_Name IS NULL";
+            String Analysis2 = "UPDATE analysis SET Ca_Price = '"+CAKE_PRICE.getText()+"' WHERE Ca_Price IS NULL";
             stat.execute(Query);
+            stat.execute(Analysis);
+            stat.execute(Analysis2);
             
-            JOptionPane.showMessageDialog(null , "GO TO NEXT PAGE");
+            
+           
             CAKE_NAME.setText(null);
             CAKE_PRICE.setText(null);
             
@@ -127,8 +131,8 @@ public class Order_Cake extends javax.swing.JFrame {
             JOptionPane.showMessageDialog(null,e.toString());
         }
        this.dispose();
-       Order_Display od = new Order_Display();
-       od.show();
+       MainMenu mm = new MainMenu();
+       mm.show();
     }//GEN-LAST:event_jButton1ActionPerformed
 
     /**

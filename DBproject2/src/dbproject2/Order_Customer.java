@@ -31,26 +31,24 @@ public class Order_Customer extends javax.swing.JFrame {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        jLabel1 = new javax.swing.JLabel();
-        jLabel2 = new javax.swing.JLabel();
-        ORDERNUMBER = new javax.swing.JLabel();
-        jLabel4 = new javax.swing.JLabel();
         Customer_NUMBER = new javax.swing.JTextField();
         GENDER = new javax.swing.JComboBox<>();
         AGE_RANGE = new javax.swing.JComboBox<>();
-        COUNTRY = new javax.swing.JTextField();
         GO_TO_DRINK = new javax.swing.JButton();
+        jLabel3 = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
+        jLabel6 = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
+        jLabel8 = new javax.swing.JLabel();
+        COUNTRY = new javax.swing.JComboBox<>();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setText("GENDER");
-
-        jLabel2.setText("AGE RANGE (up)");
-
-        ORDERNUMBER.setText("NUMBER");
-
-        jLabel4.setText("COUNTRY");
-
+        Customer_NUMBER.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                Customer_NUMBERMouseClicked(evt);
+            }
+        });
         Customer_NUMBER.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 Customer_NUMBERActionPerformed(evt);
@@ -61,60 +59,94 @@ public class Order_Customer extends javax.swing.JFrame {
 
         AGE_RANGE.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "7", "15", "22", "30" }));
 
-        GO_TO_DRINK.setText("NEXT");
+        GO_TO_DRINK.setText("NEXT PAGE");
         GO_TO_DRINK.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 GO_TO_DRINKActionPerformed(evt);
             }
         });
 
+        jLabel3.setFont(new java.awt.Font("Sitka Banner", 1, 20)); // NOI18N
+        jLabel3.setText("Number");
+
+        jLabel5.setFont(new java.awt.Font("Sitka Banner", 1, 20)); // NOI18N
+        jLabel5.setText("Customer");
+
+        jLabel6.setFont(new java.awt.Font("Sitka Banner", 1, 20)); // NOI18N
+        jLabel6.setText("Age(up)");
+
+        jLabel7.setFont(new java.awt.Font("Sitka Banner", 1, 20)); // NOI18N
+        jLabel7.setText("Gender");
+
+        jLabel8.setFont(new java.awt.Font("Sitka Banner", 1, 20)); // NOI18N
+        jLabel8.setText("Country");
+
+        COUNTRY.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Taiwan", "Foreign" }));
+
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
         layout.setHorizontalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
+                .addGap(111, 111, 111)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(95, 95, 95)
+                        .addComponent(jLabel3)
                         .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(ORDERNUMBER)
-                            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 93, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jLabel2)
-                            .addComponent(jLabel4))
-                        .addGap(41, 41, 41)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addComponent(COUNTRY, javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(AGE_RANGE, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(GENDER, javax.swing.GroupLayout.Alignment.LEADING, 0, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(Customer_NUMBER)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(91, 91, 91)
+                                .addComponent(Customer_NUMBER, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE))
+                            .addGroup(layout.createSequentialGroup()
+                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                                .addComponent(jLabel5)
+                                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))))
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(136, 136, 136)
-                        .addComponent(GO_TO_DRINK, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(0, 157, Short.MAX_VALUE))
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                            .addGroup(layout.createSequentialGroup()
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(jLabel8)
+                                    .addComponent(jLabel6)
+                                    .addComponent(jLabel7))
+                                .addGap(91, 91, 91)
+                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                                    .addComponent(AGE_RANGE, javax.swing.GroupLayout.PREFERRED_SIZE, 71, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(GENDER, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                                    .addComponent(COUNTRY, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                            .addGroup(layout.createSequentialGroup()
+                                .addGap(49, 49, 49)
+                                .addComponent(GO_TO_DRINK, javax.swing.GroupLayout.PREFERRED_SIZE, 130, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                        .addContainerGap(180, Short.MAX_VALUE))))
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
-                .addGap(63, 63, 63)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(ORDERNUMBER, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Customer_NUMBER, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 35, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(GENDER, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addGroup(layout.createSequentialGroup()
-                        .addGap(5, 5, 5)
-                        .addComponent(AGE_RANGE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addGap(18, 18, 18)
+                        .addGap(58, 58, 58)
+                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                            .addComponent(Customer_NUMBER, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(22, 22, 22)
+                        .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addGap(18, 18, 18)
+                        .addComponent(jLabel7, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
+                        .addComponent(GENDER, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(18, 18, 18)))
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(jLabel4, javax.swing.GroupLayout.PREFERRED_SIZE, 31, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel6, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(AGE_RANGE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
+                    .addComponent(jLabel8, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(COUNTRY, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(GO_TO_DRINK, javax.swing.GroupLayout.DEFAULT_SIZE, 50, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                .addComponent(GO_TO_DRINK, javax.swing.GroupLayout.DEFAULT_SIZE, 43, Short.MAX_VALUE)
                 .addGap(33, 33, 33))
         );
 
@@ -130,15 +162,16 @@ public class Order_Customer extends javax.swing.JFrame {
             String url = "jdbc:mysql://localhost:3306/dbproject2";
             Connection con =  DriverManager.getConnection(url, "root", "");
             Statement stat = con.createStatement();
-            String Query = "INSERT INTO customer (Numbers , Genders , Age_range , Country) VALUES ( '"+Customer_NUMBER.getText()+" ' , '"+GENDER.getSelectedItem()+" ' , '"+AGE_RANGE.getSelectedItem()+"' , '"+COUNTRY.getText()+ "' )";
+            String Query = "INSERT INTO customer (Numbers , Genders , Age_range , Country) VALUES ( '"+Customer_NUMBER.getText()+" ' , '"+GENDER.getSelectedItem()+" ' , '"+AGE_RANGE.getSelectedItem()+"' , '"+COUNTRY.getSelectedItem()+ "' )";
+            String Analysis = "INSERT INTO analysis (Id , Cu_Gender , Cu_Age , Cu_Country )VALUES ('"+Customer_NUMBER.getText()+" ' , '"+GENDER.getSelectedItem()+" ' , '"+AGE_RANGE.getSelectedItem()+"' , '"+COUNTRY.getSelectedItem()+ "' )";
             stat.execute(Query);
-
+            stat.execute(Analysis);
             
-            JOptionPane.showMessageDialog(null , "GO TO NEXT PAGE");
+            
             Customer_NUMBER.setText(null);
             GENDER.setSelectedItem("00");
             AGE_RANGE.setSelectedItem("00");
-            COUNTRY.setText(null);
+            COUNTRY.setSelectedItem(null);
         }
         catch(SQLException e){
             JOptionPane.showMessageDialog(null,e.toString());
@@ -147,6 +180,28 @@ public class Order_Customer extends javax.swing.JFrame {
        Order_Drink od = new Order_Drink();
        od.show();
     }//GEN-LAST:event_GO_TO_DRINKActionPerformed
+
+    private void Customer_NUMBERMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_Customer_NUMBERMouseClicked
+         try{
+        String url = "jdbc:mysql://localhost:3306/dbproject2";
+        Connection con =  DriverManager.getConnection(url, "root", "");
+        Statement stat = con.createStatement();
+
+        String Query = "SELECT * FROM id ";
+        ResultSet rs = stat.executeQuery(Query);
+        if(rs.next()){
+        int i =Integer.parseInt(rs.getString(1));
+        int d=i+1;
+        Customer_NUMBER.setText(Integer.toString(d));
+        String UPDATE = "UPDATE id SET ID = '"+ Integer.toString(d) +"' WHERE ID = '"+ Integer.toString(i) +"'";
+        stat.execute(Query);
+        stat.execute(UPDATE);
+         }
+         }
+         catch(SQLException e){
+             JOptionPane.showMessageDialog(null,e.toString());
+         }
+    }//GEN-LAST:event_Customer_NUMBERMouseClicked
 
     /**
      * @param args the command line arguments
@@ -185,13 +240,14 @@ public class Order_Customer extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JComboBox<String> AGE_RANGE;
-    private javax.swing.JTextField COUNTRY;
+    private javax.swing.JComboBox<String> COUNTRY;
     private javax.swing.JTextField Customer_NUMBER;
     private javax.swing.JComboBox<String> GENDER;
     private javax.swing.JButton GO_TO_DRINK;
-    private javax.swing.JLabel ORDERNUMBER;
-    private javax.swing.JLabel jLabel1;
-    private javax.swing.JLabel jLabel2;
-    private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel3;
+    private javax.swing.JLabel jLabel5;
+    private javax.swing.JLabel jLabel6;
+    private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel jLabel8;
     // End of variables declaration//GEN-END:variables
 }
